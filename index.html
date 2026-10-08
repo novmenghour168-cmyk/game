@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+</head>
+<body style="font-family: sans-serif;">
+    <h1 style="text-align: center; color: rgb(4, 237, 0);">Welcome <br> To My Game</h1>
+    <br><br>
+    <p id="text" style="text-align: center; font-size: 30px; font-weight: 500; color: red; text-decoration: underline;"></p>
+    <div class="btn" style="width: 100%; height: 100vh; display: flex; justify-content: center; margin-top: 200px;">
+        <button onclick="MyFunc()" id="button" style="width: 150px; height: 50px; border: 1px solid black; border-radius: 10px; background-color: aqua; color: black; font-weight: 600; font-size: 20px;">Click Here</button>
+    </div>
+    <script>
+        
+        const MyFunc = () => {
+            let name = prompt("Please Enter Your Name");
+            let text;
+            if (name != null && name.trim() != "") {
+                text = "⚠️Fuck You Ah " + name + "⚠️" ;
+            } else{
+                text = "⚠️You Need to Enter Your Name⚠️"
+            }
+            document.getElementById("text").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
